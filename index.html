@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Single Price Grid Component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color:hsl(204, 43%, 93%);
+    }
+    .tot {
+      width: 90vw;
+    }
+    .top-card {
+      height: 200px;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .fir-p {
+      color: hsl(179, 62%, 43%);
+      font-family: 'Karla', sans-serif;
+      font-size: xx-large;
+      font-weight: 700;
+      letter-spacing: 0.05ch;
+    }
+    .sec-p {
+      color: hsl(71, 73%, 54%);
+      font-family: 'Karla', sans-serif;
+      font-weight: 700;
+      font-size: x-large;
+    }
+    p:nth-child(3) {
+      font-family: 'Karla', sans-serif;
+      font-weight: 400;
+    }
+    .bottom-left {
+      background: hsl(179, 62%, 43%)
+    }
+    .bottom-right {
+      background: hsl(179, 48%, 56%)
+    }
+    .firs-p {
+      font-family: 'Karla', sans-serif;
+      font-weight: 700;
+      font-size: x-large;
+      color: white;
+    }
+    .secs-p {
+      font-family: 'Karla', sans-serif;
+      font-weight: 700;
+      font-size: xx-large;
+      color: white;
+    }
+    .secs-psp {
+      font-family: 'Karla', sans-serif;
+      font-weight: 700;
+      font-size: large;
+      color: hsl(179, 36%, 70%)
+    }
+    .tirs-p {
+      font-family: 'Karla', sans-serif;
+      font-weight: 400;
+      font-size: 17px;
+      color: white;
+    }
+    .butt {
+      background:hsl(71, 73%, 54%);
+      text-align: center;
+      font-family: 'Karla', sans-serif;
+      font-weight: 700;
+      font-size: large;
+      color: white;
+      padding: 15px;
+      width: 300px;
+      border-radius: 10px;
+    }
+    @media (max-width: 1440px) {
+      .top-card {
+        height: 300px;
+        padding: 30px;
+      }
+      .fir-p {
+        font-size: 27px;
+      }
+      .sec-p {
+        font-size: large;
+      }
+      .butt {
+        margin-right: 10px;
+      }
+      .bottom-left {
+        padding: 30px;
+      }
+      .ws {
+        padding: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class = "md:grid md:grid-cols-2 md:p-48 md:px-96 md:w-5/6 ws">
+    <div class = "md:col-span-2 overflow-hidden top-card md:pl-16 md:pr-16">
+      <p class = "fir-p">Join our community</p>
+
+      <p class = "sec-p">30-day, hassle-free money back guarantee</p>
+    
+      <p class="pt-4">Gain access to our full library of tutorials along with expert code reviews. 
+        Perfect for any developers who are serious about honing their skills.</p>
+    </div>
+    <div class = "md:pl-10 md:p-4 bottom-left">
+      <p class = "firs-p mt-4 mb-4">Monthly Subscription</p>
+
+      <p class = "secs-p mb-2">&dollar;29 <span class = "secs-psp">per month</span></p> 
+
+      <p class = "tirs-p mb-8">Full access for less than &dollar;1 a day</p>
+
+      <div class = "butt mb-4">Sign Up</div>
+    </div>
+    <div class = "pl-10 p-4 pr-16 bottom-right">
+      
+      <p class = "mt-4 firs-p">Why Us</p>
+
+      <p class = "mt-8 tirs-p">
+      Tutorials by industry experts
+      Peer &amp; expert code review
+      Coding exercises
+      Access to our GitHub repos
+      Community forum
+      Flashcard decks
+      New videos every week
+      </p>
+    </div>
+  </div>
+
+  
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Sarvesh Dubey</a>.
+    </p>
+  </footer>
+</body>
+</html>
